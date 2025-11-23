@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>📓 Smart Notes</h1>
+    <input type="text" id="search" placeholder="Search notes...">
+    <button id="themeToggle">🌙</button>
+</div>
+
+<div class="note-input">
+    <input type="text" id="noteTitle" placeholder="Note Title...">
+    <textarea id="noteContent" placeholder="Write your note..."></textarea>
+    <button id="addBtn">Add Note</button>
+</div>
+
+<h2>Your Notes</h2>
+<div id="notesContainer" class="notes-grid"></div>
+
+
+<!-- Full Screen Note Viewer -->
+<div id="noteViewer" class="viewer">
+  <div class="viewer-box">
+    <h2 id="viewerTitle"></h2>
+    <p id="viewerContent"></p>
+    <button id="closeViewer">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
